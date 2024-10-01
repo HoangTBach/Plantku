@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.primary_color {
+    color: #156963;
+}
+
+.text_color_333333 {
+    color: #333333;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1280px;
+}
+
+/* ----- Content ----- */
+.content {
+    display: flex;
+    gap: 80px;
+}
+
+.text_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 100px;
+    flex: 1;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    font-size: 6.8rem;
+    line-height: 82.89px;
+}
+
+.desc {
+    color: #2c1500;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* ----- Previous, next button */
+.buttons_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.buttons {
+    padding: 40.5px 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_wrapper {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.previous {
+    color: #333333;
+}
+
+.next {
+    color: #f2f2f2;
+}
+
+.pn {
+    font-size: 2.4rem;
+    line-height: 29.26px;
+}
+
+.text-btn {
+    text-align: start;
+    font-size: 3.2rem;
+    line-height: 39.01px;
+}
+
+/* ----- Header ----- */
+.header {
+    width: 1200px;
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 40px;
+}
+
+/* ----- Logo ----- */
+.logo {
+    width: 36px;
+    height: 36px;
+    margin-right: auto;
+}
+
+/* ----- Menu ----- */
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    padding: 5px 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----- Sign in, sign up button ----- */
+.btn {
+    padding: 9px 33px;
+    background-color: transparent;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-wrap: nowrap;
+    border: none;
+    cursor: pointer;
+}
+
+.sign_in {
+    color: #fff;
+    background-color: #156963;
+}
+
+/* ----- Main ----- */
+main {
+    margin: 150px 40px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    padding: 20px 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.card_img {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card_title {
+    color: #156963;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.card_desc {
+    color: #2c1500;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+/* ----- Featured ----- */
+.featured_plant {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.featured_title {
+    font-size: 2rem;
+    line-height: 24.38px;
+}
+
+.cheaper_btn {
+    appearance: none;
+    padding: 7px 35px 7px 11px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    line-height: 14.63px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    right: 11px;
+}
+
+.line {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.plant_card {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.plant_list {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, 217px);
+    gap: 20px;
+}
+
+.plant_img {
+    margin-bottom: 15px;
+}
+
+.plant_name {
+    margin-bottom: 7px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+}
+
+.plant_price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+}
+
+/* ----- Content 2 ----- */
+.content_2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_2 {
+    width: 522px;
+    margin: 10px 0 0 20px;
+}
+
+.card_title_2 {
+    margin-bottom: 15px;
+    color: #2c1500;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.card_desc_2 {
+    color: #2c1500;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* ----- Content 3 ----- */
+.content_3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f3f4f6;
+}
+
+.container_3 {
+    width: 583px;
+}
+
+.card_title_3 {
+    margin-bottom: 40px;
+    color: #2c1500;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.shop_btn {
+    padding: 8.5px 40.5px;
+    color: #fafefe;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #156963;
+    border: 1px solid #156963;
+    cursor: pointer;
+}
+
+/* ----- Footer ----- */
+footer {
+    padding: 80px 167px;
+    display: flex;
+    gap: 80px;
+    border-top: 1px solid rgb(21, 105, 99, 30%);
+}
+
+.footer_name {
+    margin-bottom: 23px;
+    color: #156963;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4rem;
+    line-height: 24px;
+}
+
+.footer_title {
+    margin-bottom: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 18.77px;
+}
+
+.footer_desc {
+    color: #4f4f4f;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_list_item {
+    text-wrap: nowrap;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.input {
+    width: 234px;
+    margin-bottom: 20px;
+    padding: 7px 12px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 16px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+}
+
+.submit {
+    padding: 4px 12px;
+    color: #fff;
+    background-color: #156963;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    line-height: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
