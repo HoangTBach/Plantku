@@ -9,27 +9,27 @@
     <body>
         <div class="wrapper">
             <div class="inner">
-                <div class="content">
+                <div class="kembang">
                     <img
                         src="./assets/1.jpg"
                         alt="pexels-cottonbro-4503751 1"
                     />
-                    <div class="text_wrapper">
-                        <div class="text">
-                            <h1 class="title primary_color">
+                    <div class="content">
+                        <div class="content__text">
+                            <h1 class="content__text--title color--primary">
                                 Kembang <br />
                                 Flower Mantap
                             </h1>
-                            <p class="desc">
+                            <p class="content__text--desc">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since
                                 the 1500s,
                             </p>
                         </div>
-                        <div class="buttons_wrapper">
-                            <button class="buttons">
-                                <div class="btn_wrapper">
+                        <div class="kembang__buttons">
+                            <button class="kembang__button">
+                                <div class="button--wrapper color--333333">
                                     <svg
                                         class="previous"
                                         width="32"
@@ -54,15 +54,19 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                    <p class="pn previous">Previous</p>
+                                    <p class="button--wrapper__text">
+                                        Previous
+                                    </p>
                                 </div>
-                                <h3 class="text-btn primary_color">
+                                <h3
+                                    class="kembang__button--text color--primary"
+                                >
                                     Kaktus Plant
                                 </h3>
                             </button>
-                            <button class="buttons sign_in">
-                                <div class="btn_wrapper next">
-                                    <p class="pn next">Next</p>
+                            <button class="kembang__button button__primary">
+                                <div class="button--wrapper color--f2f2f2">
+                                    <p class="button--wrapper__text">Next</p>
                                     <svg
                                         class="next"
                                         width="32"
@@ -77,13 +81,15 @@
                                         />
                                     </svg>
                                 </div>
-                                <h3 class="text-btn">Rahasia Plant</h3>
+                                <h3 class="kembang__button--text">
+                                    Rahasia Plant
+                                </h3>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="header">
-                    <div class="logo">
+                    <div class="header__logo">
                         <svg
                             width="36"
                             height="36"
@@ -101,8 +107,8 @@
                             />
                         </svg>
                     </div>
-                    <div class="menu">
-                        <button rel="stylesheet" href="" class="link">
+                    <div class="header__menu">
+                        <button rel="stylesheet" href="" class="header__search">
                             <svg
                                 width="20"
                                 height="20"
@@ -126,7 +132,7 @@
                                 />
                             </svg>
                         </button>
-                        <button rel="stylesheet" href="" class="link">
+                        <button rel="stylesheet" href="" class="header__cart">
                             <svg
                                 width="20"
                                 height="20"
@@ -169,13 +175,13 @@
                             </svg>
                         </button>
                     </div>
-                    <button class="btn sign_up primary_color">Sign Up</button>
-                    <button class="btn sign_in">Sign In</button>
+                    <button class="button color--primary">Sign Up</button>
+                    <button class="button button__primary">Sign In</button>
                 </div>
                 <main>
-                    <div class="card_wrapper">
+                    <div class="card__list">
                         <div class="card">
-                            <div class="card_img">
+                            <div class="card__img">
                                 <svg
                                     width="48"
                                     height="48"
@@ -227,19 +233,19 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h3 class="card_title">
+                                <h3 class="card__title">
                                     Fast <br />
                                     Delivery
                                 </h3>
                             </div>
-                            <p class="card_desc">
+                            <p class="card__desc">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard
                             </p>
                         </div>
                         <div class="card">
-                            <div class="card_img">
+                            <div class="card__img">
                                 <svg
                                     width="48"
                                     height="48"
@@ -253,18 +259,18 @@
                                     />
                                 </svg>
 
-                                <h3 class="card_title">
+                                <h3 class="card__title">
                                     Great Customer Service
                                 </h3>
                             </div>
-                            <p class="card_desc">
+                            <p class="card__desc">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard
                             </p>
                         </div>
                         <div class="card">
-                            <div class="card_img">
+                            <div class="card__img">
                                 <svg
                                     width="48"
                                     height="48"
@@ -278,7 +284,7 @@
                                             fill="#156963"
                                         />
                                         <path
-                                            d="M46.9104 6.51575C41.102 6.51575 32.896 6.9996 28.7025 11.193C25.0061 14.8873 25.5792 22.6879 28.7025 25.8112C30.3306 27.4372 33.2251 28.3722 36.1479 28.3722C38.8374 28.3722 41.5488 27.5832 43.3229 25.8135C47.5141 21.6201 48.0001 13.4141 48.0001 7.60555C48.0002 7.004 47.512 6.51575 46.9104 6.51575ZM41.7776 24.2702C39.0489 26.999 32.5712 26.6001 30.2414 24.2702C27.9115 21.9403 27.5126 15.4627 30.2414 12.734C33.6262 9.34911 40.5026 8.76289 45.812 8.69965C45.7488 14.0111 45.1625 20.8876 41.7776 24.2702Z"
+                                            d_="M46.9104 6.51575C41.102 6.51575 32.896 6.9996 28.7025 11.193C25.0061 14.8873 25.5792 22.6879 28.7025 25.8112C30.3306 27.4372 33.2251 28.3722 36.1479 28.3722C38.8374 28.3722 41.5488 27.5832 43.3229 25.8135C47.5141 21.6201 48.0001 13.4141 48.0001 7.60555C48.0002 7.004 47.512 6.51575 46.9104 6.51575ZM41.7776 24.2702C39.0489 26.999 32.5712 26.6001 30.2414 24.2702C27.9115 21.9403 27.5126 15.4627 30.2414 12.734C33.6262 9.34911 40.5026 8.76289 45.812 8.69965C45.7488 14.0111 45.1625 20.8876 41.7776 24.2702Z"
                                             fill="#156963"
                                         />
                                         <path
@@ -296,18 +302,18 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h3 class="card_title">
+                                <h3 class="card__title">
                                     Original <br />Plants
                                 </h3>
                             </div>
-                            <p class="card_desc">
+                            <p class="card__desc">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard
                             </p>
                         </div>
                         <div class="card">
-                            <div class="card_img">
+                            <div class="card__img">
                                 <svg
                                     width="48"
                                     height="48"
@@ -321,7 +327,7 @@
                                             fill="#156963"
                                         />
                                         <path
-                                            d="M33.4094 6.17269C33.0387 5.80193 32.4375 5.80193 32.0667 6.17269C31.6965 6.54345 31.6965 7.14462 32.0667 7.51538L36.4836 11.9322C36.8485 12.2972 37.4375 12.3035 37.8104 11.9471L45.5969 4.51009C45.8459 4.2765 45.9502 3.92746 45.8708 3.59589C45.7908 3.26432 45.5392 3.00055 45.2113 2.90574C44.884 2.81093 44.5307 2.89939 44.286 3.1372L37.17 9.93381L33.4094 6.17269Z"
+                                            d_="M33.4094 6.17269C33.0387 5.80193 32.4375 5.80193 32.0667 6.17269C31.6965 6.54345 31.6965 7.14462 32.0667 7.51538L36.4836 11.9322C36.8485 12.2972 37.4375 12.3035 37.8104 11.9471L45.5969 4.51009C45.8459 4.2765 45.9502 3.92746 45.8708 3.59589C45.7908 3.26432 45.5392 3.00055 45.2113 2.90574C44.884 2.81093 44.5307 2.89939 44.286 3.1372L37.17 9.93381L33.4094 6.17269Z"
                                             fill="#156963"
                                         />
                                         <path
@@ -339,12 +345,12 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h3 class="card_title">
+                                <h3 class="card__title">
                                     Affordable <br />
                                     Price
                                 </h3>
                             </div>
-                            <p class="card_desc">
+                            <p class="card__desc">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard
@@ -352,10 +358,10 @@
                         </div>
                     </div>
                     <div>
-                        <div class="featured_plant">
-                            <h2 class="featured_title">Featured Plants</h2>
-                            <select class="cheaper_btn">
-                                <option value="price_asc">Cheaper First</option>
+                        <div class="featured--content">
+                            <h2 class="featured__title">Featured Plants</h2>
+                            <select class="featured__select">
+                                <option>Cheaper First</option>
                             </select>
                             <svg
                                 class="arrow"
@@ -373,59 +379,51 @@
                                 />
                             </svg>
                         </div>
-                        <svg
-                            class="line"
-                            viewBox="0 0 1168 2"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path d="M0 1H1168" stroke="#E0E0E0" />
-                        </svg>
-                        <div class="plant_list">
-                            <button class="plant_card">
+                        <div class="featured__list">
+                            <button class="featured__card">
                                 <image
                                     src="./assets/2.png"
                                     alt="annie-spratt-fbAnIjhrOL4-unsplash 1"
-                                    class="plant_img"
+                                    class="featured__image"
                                 />
-                                <h4 class="plant_name">Kaktus Plants</h4>
-                                <p class="plant_price">IDR 85.000</p>
+                                <h4 class="featured__name">Kaktus Plants</h4>
+                                <p class="featured__price">IDR 85.000</p>
                             </button>
-                            <button class="plant_card">
+                            <button class="featured__card">
                                 <image
                                     src="./assets/3.png"
                                     alt="stephanie-harvey-T0inbt7nRME-unsplash 1"
-                                    class="plant_img"
+                                    class="featured__image"
                                 />
-                                <h4 class="plant_name">Landak Plants</h4>
-                                <p class="plant_price">IDR 105.000</p>
+                                <h4 class="featured__name">Landak Plants</h4>
+                                <p class="featured__price">IDR 105.000</p>
                             </button>
-                            <button class="plant_card">
+                            <button class="featured__card">
                                 <image
                                     src="./assets/4.png"
                                     alt="stephanie-harvey-wDhLrN9FAAM-unsplash 1"
-                                    class="plant_img"
+                                    class="featured__image"
                                 />
-                                <h4 class="plant_name">Kecubung Plants</h4>
-                                <p class="plant_price">IDR 85.000</p>
+                                <h4 class="featured__name">Kecubung Plants</h4>
+                                <p class="featured__price">IDR 85.000</p>
                             </button>
-                            <button class="plant_card">
+                            <button class="featured__card">
                                 <image
                                     src="./assets/5.png"
                                     alt="stephanie-harvey-vHkj3fX9wCk-unsplash (1) 1"
-                                    class="plant_img"
+                                    class="featured__image"
                                 />
-                                <h4 class="plant_name">Kecubung Plants</h4>
-                                <p class="plant_price">IDR 85.000</p>
+                                <h4 class="featured__name">Kecubung Plants</h4>
+                                <p class="featured__price">IDR 85.000</p>
                             </button>
-                            <button class="plant_card">
+                            <button class="featured__card">
                                 <image
                                     src="./assets/6.png"
                                     alt="galina-n-miziNqvJx5M-unsplash 1"
-                                    class="plant_img"
+                                    class="featured__image"
                                 />
-                                <h4 class="plant_name">Kecubung Plants</h4>
-                                <p class="plant_price">IDR 85.000</p>
+                                <h4 class="featured__name">Kecubung Plants</h4>
+                                <p class="featured__price">IDR 85.000</p>
                             </button>
                         </div>
                     </div>
@@ -455,12 +453,12 @@
                             alt="jason-leung-r5pPYI6lEpA-unsplash 1"
                         />
                     </div>
-                    <div class="content_3">
-                        <div class="container_3">
-                            <h2 class="card_title_3">
+                    <div class="box">
+                        <div class="box__content">
+                            <h2 class="box__content--title">
                                 Get your favourites plant on our shop now
                             </h2>
-                            <button class="shop_btn">Visit Shop</button>
+                            <button class="button--shop">Visit Shop</button>
                         </div>
                         <image
                             src="./assets/9.png"
@@ -469,37 +467,37 @@
                     </div>
                 </main>
                 <footer>
-                    <div class="footer_container">
-                        <h1 class="footer_name">PLANTKU</h1>
-                        <h2 class="footer_title text_color_333333">
+                    <div>
+                        <h1 class="footer__name">PLANTKU</h1>
+                        <h2 class="footer__title color_333333">
                             Plantku House
                         </h2>
-                        <p class="footer_desc">
+                        <p class="footer__desc">
                             Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok,
                             Kota Yogyakarta, Daerah Istimewa Yogyakarta 55282
                         </p>
                     </div>
                     <div>
-                        <h2 class="footer_title">Perusahaan</h2>
-                        <ul class="footer_list">
-                            <li class="footer_list_item">Tentang Kami</li>
-                            <li class="footer_list_item">Hubungi Kami</li>
+                        <h2 class="footer__title">Perusahaan</h2>
+                        <ul class="footer__list">
+                            <li class="footer__list--item">Tentang Kami</li>
+                            <li class="footer__list--item">Hubungi Kami</li>
                         </ul>
                     </div>
                     <div>
-                        <h2 class="footer_title">Produk</h2>
-                        <ul class="footer_list">
-                            <li class="footer_list_item">Tanaman</li>
-                            <li class="footer_list_item">Tanaman Lain</li>
+                        <h2 class="footer__title">Produk</h2>
+                        <ul class="footer__list">
+                            <li class="footer__list--item">Tanaman</li>
+                            <li class="footer__list--item">Tanaman Lain</li>
                         </ul>
                     </div>
                     <div>
-                        <h2 class="footer_title">Berlangganan Email Kami</h2>
+                        <h2 class="footer__title">Berlangganan Email Kami</h2>
                         <input
-                            class="input"
+                            class="footer__input"
                             placeholder="Masukan Alamat Email"
                         />
-                        <button class="submit">Submit</button>
+                        <button class="footer__button--submit">Submit</button>
                     </div>
                 </footer>
             </div>
